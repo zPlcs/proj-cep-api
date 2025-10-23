@@ -1,0 +1,96 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+.app {
+    width: 500px;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background: #2d3748;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    color: #e2e8f0;
+  }
+  
+  .app label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #e2e8f0;
+  }
+  
+  .app input {
+    width: 68.5%;
+    padding: 12px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #4a5568;
+    color: #e2e8f0;
+  }
+  
+  .app input:focus {
+    outline: none;
+    background: #718096;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  
+  .app input::placeholder {
+    color: #a0aec0;
+  }
+  
+  .app button {
+    padding: 12px 24px;
+    background: #4a5568;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  
+  .app button:hover {
+    background: #718096;
+    transform: translateY(-2px);
+  }
+  
+  .app button:active {
+    transform: translateY(0);
+  }
+  
+  .app p[style*="color: red"] {
+    background: #742a2a;
+    color: #fed7d7 !important;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    border-left: 5px solid #fc8181;
+    font-weight: bold;
+  }
+  
+  .app p:not([style]) {
+    background: #4a5568;
+    color: #e2e8f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border-left: 5px solid #718096;
+    line-height: 1.6;
+  }
+  
+  .app p:not([style]) br {
+    display: block;
+    margin: 8px 0;
+    content: "";
+  }
+  
+  .app p:not([style]) br:first-child {
+    margin-top: 0;
+  }

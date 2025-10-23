@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import './style/app.css'
 const App = () => {
   const [printCep, setPrintCep] = useState('')
   const [cepInput, setCepInput] = useState('');
@@ -57,12 +57,12 @@ const App = () => {
 
       {endereco && !erro && (
                 <p>
-                    <br/>{printCep}
-                    <br/>{endereco.logradouro}
-                    <br/>{endereco.bairro}
-                    <br/>{endereco.localidade}
-                    <br/>{endereco.uf}
-                    <br/>{endereco.ibge}
+                    CEP: {printCep}
+                    <br/>Rua: {endereco.logradouro}
+                    <br/>Bairro: {endereco.bairro}
+                    <br/>Localidade: {endereco.localidade}
+                    <br/>UF: {endereco.uf}
+                    <br/>IBGE: {endereco.ibge}
                 </p>
             )}
     </div>
