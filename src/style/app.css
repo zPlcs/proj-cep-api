@@ -94,3 +94,8 @@ body{
   .app p:not([style]) br:first-child {
     margin-top: 0;
   }
+
+  .erro{
+    color: red;
+    font-weight: bold
+  }

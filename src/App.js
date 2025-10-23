@@ -53,7 +53,7 @@ const App = () => {
       <input value={cepInput} onChange={(e) => setCepInput(e.target.value)}/>
       <button onClick={buscarCep}>Consultar</button>
 
-      {erro && <p style={{ color: 'red', fontWeight: 'bold' }}>{erro}</p>}
+      {erro && <p className="erro">{erro}</p>}
 
       {endereco && !erro && (
                 <p>
